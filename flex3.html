@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .flex-con{
+            display: flex;
+            height: 20vh;
+            width: 100%;
+            background-color: black;
+            list-style: none;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .flex-con li{
+            color: white;
+        }
+        .menu{
+            position: relative;
+        }
+        .sb{
+            position: absolute;
+            display: none;
+            top: 30px;
+        }
+        .sb ul{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: black;
+            height: fit-content;
+            width: 100%;
+        }
+        .sb ul li{
+            color: white;
+            list-style-type: none;
+        }
+        .menu:hover .sb{
+            display: block;
+        }
+        /* gap property can be used to provide space b/w flex items */
+    
+           </style>
+</head>
+<body>
+    <ul class ="flex-con">
+        <li>Home</li>
+        <li class="menu">Courses<i class="fa-solid fa-angle-down"></i>
+            <div class="sb">
+                <ul>
+                    <li>MERN</li>
+                    <li>MEAN</li>
+                    <li>MEVN</li>
+                    <li>PYTHON</li>
+                </ul>
+            </div>
+        </li>
+        <li>Services</li>
+        <li>Contact</li>
+    </ul>
+</body>
+</html>
